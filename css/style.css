@@ -200,6 +200,8 @@ body {
 }
 
 .authorization__form-btn {
+  max-width: 200px;
+  width: 100%;
   margin: 0 0 34px 0;
   padding: 14px 19px;
   border-radius: 25px;
