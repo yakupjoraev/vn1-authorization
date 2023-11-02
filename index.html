@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/media.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Modal -->
+
+  <div class="modals-wrapper">
+    <button class="open-modal-btn" data-modal-id="authorization">Open Modal Авторизация</button>
+    <div class="modal" id="authorization">
+      <div class="modal-content authorization-content">
+        <div class="close-modal-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="7.07104" y="22.627" width="22" height="2" transform="rotate(-45 7.07104 22.627)" fill="white" />
+            <rect x="8.48535" y="7.07227" width="22" height="2" transform="rotate(45 8.48535 7.07227)" fill="white" />
+          </svg>
+        </div>
+
+        <form action="#" class="authorization__form">
+          <div class="authorization__form-main">
+            <h3>Авторизация</h3>
+
+            <h4>Давайте авторизуемся <br>
+              по вашему номеру телефона</h4>
+
+            <div class="authorization__form-input-wrapper">
+              <input class="authorization__form-input" type="tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _"
+                data-mask-input data-js-input data-js-input-phone>
+
+              <div class="authorization__form-input-error">Похоже в номере ошибка</div>
+            </div>
+
+
+            <button type="submit" class="authorization__form-btn">Получить СМС-код</button>
+
+            <div class="authorization__form-agreement">
+              Продолжая пользоваться сайтом, <br>
+              вы соглашаетесь с 
+              <a href="#" target="_blank">правилами работы сервиса</a>
+              vn1.ru
+            </div>
+          </div>
+
+          <div class="authorization__form-info">
+            <h3>Для чего?</h3>
+
+            <ul>
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                SMS-информирование
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                Контроль бонусов
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                Управление заказами
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                История покупок
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                Персональные акции и скидки
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <button class="open-modal-btn" data-modal-id="authorization-code">Open Modal Авторизация Код из СМС</button>
+    <div class="modal" id="authorization-code">
+      <div class="modal-content authorization-content">
+        <div class="close-modal-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="7.07104" y="22.627" width="22" height="2" transform="rotate(-45 7.07104 22.627)" fill="white" />
+            <rect x="8.48535" y="7.07227" width="22" height="2" transform="rotate(45 8.48535 7.07227)" fill="white" />
+          </svg>
+        </div>
+
+        <form action="#" class="authorization__form">
+          <div class="authorization__form-main">
+            <h3>Авторизация</h3>
+
+            <h4>Давайте авторизуемся <br>
+              по вашему номеру телефона</h4>
+
+            <div class="authorization__form-input-wrapper">
+              <input class="authorization__form-input" type="text" placeholder="Код из SMS" data-js-input>
+
+              <div class="authorization__form-input-error">Не верный код</div>
+
+              <div class="authorization__form-input-code">Запросить код повторно через 55 сек</div>
+            </div>
+
+
+            <button type="submit" class="authorization__form-btn">Продолжить</button>
+
+            <div class="authorization__form-agreement">
+              Продолжая пользоваться сайтом, <br>
+              вы соглашаетесь с 
+              <a href="#" target="_blank">правилами работы сервиса</a>
+              vn1.ru
+            </div>
+          </div>
+
+          <div class="authorization__form-info">
+            <h3>Для чего?</h3>
+
+            <ul>
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                SMS-информирование
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                Контроль бонусов
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                Управление заказами
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                История покупок
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                Персональные акции и скидки
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <button class="open-modal-btn" data-modal-id="authorization-registration">Open Modal Если норме не знаком
+      Авторизация</button>
+    <div class="modal" id="authorization-registration">
+      <div class="modal-content authorization-content">
+        <div class="close-modal-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect x="7.07104" y="22.627" width="22" height="2" transform="rotate(-45 7.07104 22.627)" fill="white" />
+            <rect x="8.48535" y="7.07227" width="22" height="2" transform="rotate(45 8.48535 7.07227)" fill="white" />
+          </svg>
+        </div>
+
+        <form action="#" class="authorization__form">
+          <div class="authorization__form-main">
+            <h3>Регистрация</h3>
+
+            <h4>Как Вас зовут?</h4>
+
+            <div class="authorization__form-input-wrapper">
+              <input class="authorization__form-input" type="text" placeholder="Ваше Имя" data-js-input>
+
+              <div class="authorization__form-input-error">Обязательное поле</div>
+            </div>
+
+
+            <button type="submit" class="authorization__form-btn">Продолжить</button>
+
+            <div class="authorization__form-agreement">
+              Продолжая пользоваться сайтом, <br>
+              вы соглашаетесь с 
+              <a href="#" target="_blank">правилами работы сервиса</a>
+              vn1.ru
+            </div>
+          </div>
+
+          <div class="authorization__form-info">
+            <h3>Для чего?</h3>
+
+            <ul>
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                SMS-информирование
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                Контроль бонусов
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                Управление заказами
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                История покупок
+              </li>
+
+              <li>
+                <img src="img/gg_check-r.svg" alt="gg_check">
+
+                Персональные акции и скидки
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/imask.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

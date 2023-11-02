@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+  .close-modal-btn {
+    top: 2px;
+    right: 2px;
+  }
+
+  .authorization__form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .authorization__form-main {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .authorization__form-main h3,
+  .authorization__form-main h4,
+  .authorization__form-input-wrapper,
+  .authorization__form-btn {
+    margin: 0 auto 10px;
+  }
+
+  .authorization__form-input-wrapper {
+    transition: margin 0.2s linear;
+  }
+
+  .authorization__form.error .authorization__form-input-wrapper {
+    margin-top: 18px;
+  }
+
+
+  .authorization__form-btn {
+    width: fit-content;
+  }
+
+  .authorization__form-info {
+    padding: 30px 20px;
+  }
+}
